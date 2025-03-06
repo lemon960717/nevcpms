@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="357dp"
+    android:background="@drawable/smssdk_corner_white_bg"
+    >
+
+    <!--包含图片那一栏的整体布局-->
+    <LinearLayout
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="3dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center_horizontal"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/dialog_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/s5" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="258dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dialog_name"
+                    android:layout_width="245dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    android:maxEms="8"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="暗泽丽湾充电站所处的健康灰色空间bgfbbdfbgh"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="地址： "/>
+                <TextView
+                    android:id="@+id/dialog_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="14dp"
+                    android:text="江苏省南京市武陵区南京理工大学21号删除键可视对讲深刻得"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="地区： "/>
+                <TextView
+                    android:id="@+id/dialog_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:textSize="14dp"
+                    android:text="武昌区"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--    价格-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="充电价格："/>
+        <TextView
+            android:id="@+id/dialog_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:textSize="22sp"
+            android:textColor="@android:color/holo_red_light"
+            android:text="1.8690"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7dp"
+            android:textSize="15dp"
+            android:text="元/度"
+             />
+    </LinearLayout>
+
+    <!--    开放时间-->
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="开放时间："/>
+        <TextView
+            android:id="@+id/dialog_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:textSize="15dp"
+            android:text="周一至周日0:00-23:59"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="#DFDFDF"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:id="@+id/dialog_nav"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30sp"
+            >
+            <ImageView
+                android:layout_marginLeft="27dp"
+                android:layout_width="17dp"
+                android:layout_height="18dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/navi"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导航"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="13dp"
+            android:background="#DFDFDF"/>
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="9dp"
+            android:id="@+id/dialog_phone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            >
+            <ImageView
+                android:layout_marginLeft="23dp"
+                android:layout_width="19dp"
+                android:layout_height="18dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/phone_icon"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+</LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"/>
+</LinearLayout>

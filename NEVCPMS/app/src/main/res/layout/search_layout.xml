@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAE3E3">
+
+    <!--    搜索-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85sp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#00FFFF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+        <LinearLayout
+            android:id="@+id/go_to_search"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:background="@drawable/smssdk_error_toast_bg">
+            <EditText
+                android:layout_marginLeft="25sp"
+                android:id="@+id/search_content"
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/smssdk_error_toast_bg"
+                />
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_gravity="center_vertical"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

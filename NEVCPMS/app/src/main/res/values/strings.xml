@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NEVCPMS</string>
+    <string name="turn_to_map">Turn to map</string>
+    <string name="Account">账号:</string>
+    <string name="code">密码</string>
+    <string name="password">密码</string>
+    <string name="pass_word">密码:</string>
+    <string name="sms_register">短信验证登录</string>
+    <string name="title_activity_main_page">MainActivity</string>
+    <string name="title_home">主页</string>
+    <string name="title_dashboard">地图</string>
+    <string name="title_notifications">我的</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello A fragment</string>
+
+</resources>

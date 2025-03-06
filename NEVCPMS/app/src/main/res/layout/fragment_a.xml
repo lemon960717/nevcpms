@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAE3E3">
+
+<!--    搜索-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130sp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#00FFFF"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"/>
+        <LinearLayout
+            android:id="@+id/go_to_search"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:background="@drawable/smssdk_error_toast_bg">
+            <TextView
+                android:gravity="center"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+        <!--    筛选-->
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            app:arrowTint="@color/colorPrimary"
+            app:dropDownListPaddingBottom="50dp"
+            app:textTint="@color/colorAccent" />
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
